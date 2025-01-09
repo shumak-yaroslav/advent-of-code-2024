@@ -14,7 +14,7 @@ export const calculateSafeReports = (data: string): number => {
         for (let index = 0; index < row.length - 1; index++) {
             const diff = row[index + 1] - row[index];
 
-            if (Math.abs(diff) > 3 || diff === 0) {
+            if (Math.abs(diff) > 5 || diff === 0) {
                 isWithinDifference = false;
             }
 
